@@ -1,0 +1,193 @@
+.login {
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 1200px;
+    height: auto;
+}
+
+.mod-login {
+    overflow: hidden;
+    padding: 20px 10px;
+    width: 378px;
+    border: 1px solid #d2d2ce;
+    background: #f8f8f5;
+}
+
+.mod-login h2 {
+    margin: 0 12px 18px 12px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #d2d2ce;
+    text-align: left;
+    font-size: 14px;
+}
+
+.mod-login .aa {
+    position: relative;
+    top: -38px;
+    left: 157px;
+    color: #06c;
+}
+
+.mod-login dl {
+    padding: 7px 0;
+    overflow: hidden;
+}
+
+.mod-login dt {
+    float: left;
+    width: 90px;
+    height: 38px;
+    color: #363636;
+    text-align: right;
+    font-size: 14px;
+    line-height: 38px;
+}
+
+.mod-login dd {
+    margin-left: 88px;
+    line-height: 20px;
+}
+
+.mod-login .txt-input {
+    padding: 0 5px;
+    width: 270px;
+    height: 38px;
+    color: #666;
+    font-size: 12px;
+    line-height: 38px;
+    float: left;
+    border: 1px solid #A00000;
+}
+
+.mod-login div {
+    display: inline-block;
+    background: transparent url(../img/icon_error.gif) no-repeat scroll 0px 3px;
+    color: Red;
+    font-size: 12px;
+    margin-left: 5px;
+    padding-left: 16px;
+}
+
+.mod-login div.hidden {
+    display: none;
+}
+
+.mod-login .txt-validcode {
+    width: 165px;
+}
+
+.mod-login ins {
+    margin-top: 3px;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+
+.mod-login .btn {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.mod-login .btn-style {
+    background-color: rgb(244, 95, 3);
+    color: #fff;
+    margin-bottom: 2px;
+}
+
+#vip {
+    position: relative;
+    display: inline-block;
+    margin: 8px 0 9px 88px;
+    width: auto;
+    height: 14px;
+    line-height: 14px;
+    margin-left: 80px;
+}
+
+#vip input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 14px;
+    height: 14px;
+}
+
+#vip span {
+    position: absolute;
+    top: 0;
+    left: 17px;
+    width: 110px;
+    height: 14px;
+    text-align: left;
+    line-height: 14px;
+}
+
+#vip2 {
+    position: relative;
+    display: block;
+    margin-left: 88px;
+    padding: 8px 0 13px 0;
+    width: 290px;
+    height: 14px;
+    line-height: 14px;
+}
+
+#vip2 input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 14px;
+    height: 14px;
+}
+
+#vip2 span.accept {
+    position: absolute;
+    top: 0;
+    left: 17px;
+    width: 120px;
+    height: 14px;
+    text-align: left;
+    line-height: 14px;
+}
+
+#vip2 a {
+    position: absolute;
+    top: 0;
+    left: 140px;
+    width: 130px;
+    height: 14px;
+    color: #06c;
+    text-align: left;
+    line-height: 14px;
+}
+
+.mod-login a#btn-register {
+    display: block;
+    margin-right: 0;
+    margin-left: 10px;
+    width: 355px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border: 0;
+    background: #bb0e30;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.mod-login-note {
+    position: relative;
+    overflow: hidden;
+    width: 790px;
+    height: 480px;
+    background: url(../img/register_ads.jpg) no-repeat;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>www.jb51.net jQuery手风琴效果</title>
+    <style>
+        .wrap {
+            width: 200px;
+            height: auto;
+            margin: 50px auto;
+            border-radius: 5px
+        }
+
+        ul,
+        li,
+        h4 {
+            list-style: none;
+            margin: 0;
+            padding: 0
+        }
+
+        .wrap>ul {
+            border-radius: 5px
+        }
+
+        .wrap>ul>li {
+            background: #E4644B;
+            text-align: center;
+            border-bottom: solid 1px #DED1D1;
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .wrap>ul>li:last-child {
+            border-bottom: none;
+        }
+
+        .wrap>ul>li h4 {
+            padding: 8px 0;
+        }
+
+        .wrap>ul li span {
+            position: absolute;
+            top: 5px;
+            right: 12px;
+            font-size: 22px;
+            color: #fff;
+            display: inline-block;
+        }
+
+        .wrap>ul>li .child-ul {
+            background: #fff;
+            display: none;
+        }
+
+        .wrap>ul>li .child-ul li {
+            color: #000;
+            line-height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <ul class="menu">
+            <li>
+                <h4>软件jiaoxue</h4>
+                <span>+</span>
+                <ul class="child-ul">
+                    <li>java</li>
+                    <li>web前端</li>
+                    <li>安卓开发</li>
+                    <li>软件测试</li>
+                </ul>
+            </li>
+            <li>
+                <h4>游戏动漫</h4>
+                <span>+</span>
+                <ul class="child-ul">
+                    <li>java</li>
+                    <li>web前端</li>
+                    <li>安卓开发</li>
+                    <li>软件测试</li>
+                </ul>
+            </li>
+            <li>
+                <h4>电商企业</h4>
+                <span>+</span>
+                <ul class="child-ul">
+                    <li>淘宝</li>
+                    <li>天猫</li>
+                    <li>京东</li>
+                    <li>苏宁易购</li>
+                </ul>
+            </li>
+            <li>
+                <h4>营销培训</h4>
+                <span>+</span>
+                <ul class="child-ul">
+                    <li>seo</li>
+                    <li>微信营销</li>
+                    <li>网络创业</li>
+                    <li>市场营销</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".wrap>ul>li").on("click", function () {
+                var next = $(this).children(".child-ul");
+                var icon = $(this).children("span");
+                next.slideToggle('fade');
+                if (icon.html() === "+") {
+                    icon.html("-");
+                } else {
+                    icon.html("+");
+                }
+                $('.child-ul').not(next).slideUp('fast'); //不是当前点击的内容全部向上收起
+                $('.wrap>ul>li').children("span").not(icon).html("+");
+                return false;
+            })
+        })
+    </script>
+</body>
+
+</html>

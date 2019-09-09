@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css1/base.css">
+    <link rel="stylesheet" href="css1/resetpwd.css">
+</head>
+
+<body style="background-color: #2E363F">
+    <div id="loginbox">
+        <div class="login_title">
+            <h2 style="color:#B2DFEE;font-size:28px;">后台信息管理系统</h2>
+            <p style="font-size:14px;color:gray;">版权所有 © iProg网络科技有限公司 2015-2018</p>
+        </div>
+        <form action="" class="loginform">
+            <div class="loginform1">
+                <label for="" class="label1">登陆账号</label>
+                <input type="text" id="user" placeholder="admin">
+            </div>
+            <div class="loginform2">
+                <label for="" class="label1">新密码</label>
+                <input type="password" id="pwd">
+            </div>
+            <div class="loginform2">
+                <label for="" class="label1">确认新密码</label>
+                <input type="password" id="pwd1">
+            </div>
+            <div class="loginform3">
+                <input type="button" value="返回登陆" id="backBtn">
+                <input type="button" value="确认修改" id="ackBtn">
+            </div>
+        </form>
+    </div>
+</body>
+<script src="js/jquery-1.10.1.min.js"></script>
+<script>
+    $(function () {
+        $('#backBtn').click(function () {
+            $(location).attr('href', 'login.html');
+        });
+        $('#ackBtn').click(function () {
+            if ($('#pwd').val() == $('#pwd1').val()) {
+                $.ajax({
+                    type: 'post',
+                    url: 'api/index.php',
+                    data: {
+                        type: 'change_pwd',
+                        user: $('#user').val(),
+                        pwd: $('#pwd').val()
+                    },
+                    success: str => {
+                        let arr = JSON.parse(str);
+                        // console.log(arr);
+                        if (arr.code) {
+                            alert('密码修改成功');
+                            $(location).attr('href', 'login.html');
+                        }
+                    }
+                })
+            } else {
+                alert('密码输入不一致');
+            }
+
+        });
+    })
+</script>
+
+</html>

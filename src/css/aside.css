@@ -1,0 +1,168 @@
+/* 右侧 */
+.ym-nBar {
+    position: fixed;
+    top: 0;
+    right: -34px;
+    z-index: 1000;
+    background: #7e0001;
+    width: 34px;
+    height: 100%;
+    z-index: 1400;
+}
+
+.ym-nBar-tabs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 34px;
+    height: 100%;
+    color: #fff;
+    font-family: "Microsoft Yahei", "微软雅黑", "宋体";
+}
+
+.ym-nBar-tab {
+    position: absolute;
+    padding: 7px;
+    width: 20px;
+    height: auto;
+    display: block;
+    cursor: pointer;
+}
+
+.ym-nBar-tab-user,
+.ym-nBar-tab-cart,
+.ym-nBar-tab-feedback,
+.ym-nBar-tab-chat,
+.ym-nBar-tab-valid {
+    border-bottom: 1px solid #8b1a1b;
+}
+
+.ym-nBar-user-default,
+.ym-nBar-cart-logo,
+.ym-nBar-asset-logo,
+.ym-nBar-charge-logo,
+.ym-nBar-feedback-logo,
+.ym-nBar-chat-logo,
+.ym-nBar-chat-title em,
+.ym-nBar-chat-min,
+.ym-nBar-chat-max,
+.ym-nBar-chat-close,
+.ym-nBar-valid-logo,
+.ym-nBar-tab-valid .error,
+.ym-nBar-qrcode-logo,
+.ym-nBar-backtop-logo,
+.ym-nBar-pop-sign,
+.ym-nBar-pop-box li em,
+.ym-nBar-pop-privs a,
+.bubble_l .ym-nBar-chat-head,
+.bubble_r .ym-nBar-chat-head {
+    background-image: url(../img/nBar_icon.png?20150309);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.ym-nBar-tab-user .ym-nBar-user-default {
+    background-position: 2px 0;
+}
+
+.ym-nBar-tab-cart .ym-nBar-cart-logo {
+    background-position: -20px 1px;
+}
+
+.ym-nBar-tab-cart .ym-nBar-cart-txt {
+    text-align: center;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.ym-nBar-tab-cart .ym-nBar-cart-num {
+    margin: 9px 0;
+    background: #f46b0a;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    display: block;
+    border-radius: 30px;
+}
+
+.ym-nBar-tab-cart .ym-nBar-cart-num em {
+    line-height: 20px;
+    color: #fff;
+}
+
+.ym-nBar-tab-asset .ym-nBar-asset-logo {
+    background-position: -40px 0;
+}
+
+.ym-nBar-pop {
+    position: absolute;
+    right: 34px;
+    z-index: 1001;
+    display: none;
+    padding: 20px;
+    height: auto;
+    border: 1px solid #ddd;
+    background: #fff;
+    box-shadow: 0 0 2px #ccc;
+}
+
+.ym-nBar-tab-asset .ym-nBar-pop-tip {
+    padding: 7px 20px 7px 7px;
+    width: 70px;
+    height: 20px;
+    line-height: 20px;
+    color: #333;
+    background: #ddd;
+    border: none;
+    top: 0;
+}
+
+.ym-nBar-pop .ym-nBar-pop-icon {
+    position: absolute;
+    right: -8px;
+    top: 10px;
+    color: #fff;
+    font-family: "宋体";
+    font-size: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    width: 16px;
+}
+
+.ym-nBar-tab-charge .ym-nBar-charge-logo {
+    background-position: -60px 0;
+}
+
+.ym-nBar-tab-charge .ym-nBar-pop-tip {
+    padding: 7px 20px 7px 7px;
+    width: 70px;
+    height: 20px;
+    line-height: 20px;
+    color: #333;
+    background: #ddd;
+    border: none;
+    top: 0;
+}
+
+.ym-nBar-tab-chat .ym-nBar-chat-logo {
+    background-position: -160px 0;
+}
+
+.ym-nBar-tab-chat {
+    cursor: auto;
+    position: relative;
+}
+
+.ym-nBar-tab-valid .ym-nBar-valid-logo {
+    background-position: -140px 0;
+}
+
+.ym-nBar-tab-backtop {
+    bottom: 16px;
+}
+
+.ym-nBar-tab-backtop .ym-nBar-backtop-logo {
+    background-position: -120px 0;
+}

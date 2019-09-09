@@ -1,0 +1,605 @@
+.content {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    color: #333;
+}
+
+.crumb {
+    width: 960px;
+    margin: 10px 0;
+    color: #666;
+}
+
+.crumb a {
+    color: #666;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.promotion {
+    margin-top: 10px;
+    width: 960px;
+}
+
+.promotionPic {
+    float: left;
+    width: 380px;
+}
+
+.promotionMiddle {
+    margin-left: 400px;
+    width: 560px;
+}
+
+.promotionMiddleTop {
+    position: relative;
+    z-index: 15;
+    margin-bottom: 20px;
+    width: 560px;
+    border-bottom: 1px solid #e6e1db;
+}
+
+.pro-name {
+    display: table;
+    width: 560px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.pro-name h1 {
+    margin-right: 10px;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+
+}
+
+.pro-info {
+    display: table;
+    width: 560px;
+    margin-bottom: 10px;
+}
+
+.comment-score {
+    float: left;
+    width: 180px;
+    height: 20px;
+}
+
+.comment-score dt {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+    color: #999;
+    line-height: 20px;
+}
+
+.comment-score dd {
+    margin-left: 65px;
+}
+
+.m-ratescore {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 110px;
+    height: 20px;
+    background: url(../img/icon_xiangqing.png) no-repeat;
+    background-position: -50px -87px;
+}
+
+.m-ratescore i {
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 20px;
+    background: url(../img/icon_xiangqing.png) no-repeat;
+    background-position: -50px -107px;
+    text-indent: -10000px;
+}
+
+.pro-data {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+}
+
+.pro-data span {
+    float: left;
+    margin-right: 25px;
+    color: #999;
+}
+
+.pro-data span a {
+    padding-left: 5px;
+    color: #09c;
+}
+
+.promotionMiddleGift {
+    display: table;
+    margin-bottom: 20px;
+    width: 560px;
+    height: auto;
+}
+
+.promotionMiddleGift_hover {
+    margin-bottom: 0;
+    height: 50px;
+}
+
+.promotionMiddleGift dl {
+    width: 560px;
+}
+
+.promotionMiddleGift .cx_dl {
+    position: relative;
+    z-index: 10;
+    padding: 5px 0;
+    height: 18px;
+}
+
+.promotionMiddleGift dl dt {
+    float: left;
+    width: 60px;
+    height: 18px;
+    color: #999;
+    line-height: 18px;
+}
+
+.promotionMiddleGift .cx_dl dd {
+    overflow: hidden;
+    margin-left: 65px;
+    width: 495px;
+    height: 18px;
+    color: #957a67;
+    line-height: 18px;
+}
+
+.promotionMiddleGift dl dd div {
+    padding: 0;
+}
+
+.promotionMiddleGift dl dd b {
+    display: inline-block;
+    width: 60px;
+    height: 18px;
+    text-align: center;
+    background: #d73c3c;
+    color: #fff;
+    font-weight: normal;
+    vertical-align: top;
+    border-radius: 4px;
+}
+
+.promotionMiddleGift dl dd em {
+    display: inline-block;
+    width: 350px;
+}
+
+.promotionMiddleCenter {
+    display: table;
+    width: 560px;
+    *padding-bottom: 14px;
+    color: #999;
+    line-height: 36px;
+}
+
+.promotionMiddleCenter .currentFont {
+    margin-right: 10px;
+    font-weight: normal;
+    line-height: 30px;
+    color: #c00;
+    margin: 0 30px 0 2px;
+}
+
+.promotionMiddleCenter .currentFont em {
+    font-weight: normal;
+    font-size: 36px;
+}
+
+.promotionMiddleProprietary_Serv {
+    width: 560px;
+    height: 60px;
+    display: block;
+    border-top: 1px solid #e6e1db;
+}
+
+.promotionMiddleProprietary_Serv a,
+.promotionMiddleProprietary_Serv span {
+    width: 120px;
+    height: 30px;
+    display: inline-block;
+    margin-top: 21px;
+    font-size: 14px;
+    color: #927966;
+}
+
+.promotionMiddleProprietary_Serv label {
+    width: 29px;
+    height: 30px;
+    display: inline-block;
+    background: url(../img/promotionMiddleIcon.png) no-repeat;
+    float: left;
+    margin-top: -5px;
+    margin-right: 5px;
+}
+
+.promotionMiddleProprietary_Serv .service1 {
+    background-position: 0px 0px;
+}
+
+.promotionMiddleProprietary_Serv .service2 {
+    background-position: -28px 0px;
+    width: 32px;
+}
+
+.promotionMiddleProprietary_Serv .service3 {
+    background-position: -60px 0px;
+}
+
+.promotionMiddleKeyC {
+    display: table;
+    width: 560px;
+    height: auto;
+    background: #ffffe8;
+}
+
+.promotionMiddleKeyD {
+    z-index: 8;
+    padding: 20px;
+    width: 518px;
+    height: auto;
+    border: 1px dashed #fec083;
+}
+
+.promotionMiddleKeyD ul {
+    position: relative;
+    z-index: 6;
+}
+
+.promotionMiddleKeyD ul li {
+    z-index: 5;
+    display: block;
+    padding: 3px 0;
+    height: auto;
+    line-height: 26px;
+}
+
+.promotionMiddleKeyD ul li span {
+    float: left;
+    width: 60px;
+}
+
+.promotionMiddleKeyD ul li span.cityBnt {
+    position: relative;
+    float: left;
+    display: block;
+    overflow: hidden;
+    padding: 0 5px;
+    width: 80px;
+    height: 24px;
+    border: 1px solid #ccc;
+    background: #fff;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.cityBnt i,
+.cityBntOn i,
+.cityBntNone i {
+    position: absolute;
+    top: 10px;
+    left: 74px;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    border-color: #999 #fff #fff;
+    border-style: solid;
+    border-width: 6px;
+}
+
+.promotionMiddleKeyD ul li ins {
+    color: #c00;
+    text-decoration: none;
+}
+
+.promotionMiddleKeyN ul li ins.have,
+.promotionMiddleKeyD ul li ins.have {
+    padding-left: 5px;
+    color: #666;
+}
+
+.promotionMiddleKeyN ul li ins.have b,
+.promotionMiddleKeyD ul li ins.have b {
+    padding-right: 2px;
+    color: #c00;
+}
+
+.promotionMiddleKeyN ul li a.left,
+.promotionMiddleKeyD ul li a.left {
+    float: left;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+    background: url(../img/icon_xiangqing.png) no-repeat;
+    background-position: 0 -232px;
+}
+
+.promotionMiddleKeyN ul li input,
+.promotionMiddleKeyD ul li input {
+    float: left;
+    margin-top: 3px;
+    padding: 0 3px;
+    width: 35px;
+    height: 20px;
+    border: 1px solid #e6e1db;
+    text-align: center;
+    line-height: 20px;
+}
+
+.promotionMiddleKeyN ul li a.right,
+.promotionMiddleKeyD ul li a.right {
+    float: left;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-right: 15px;
+    margin-left: 5px;
+    width: 16px;
+    height: 16px;
+    background: url(../img/icon_xiangqing.png) no-repeat;
+    background-position: -16px -232px;
+}
+
+.promotionMiddleKeyD .h44 {
+    margin-top: 10px;
+    height: 44px;
+}
+
+a.btn-add-cart {
+    float: left;
+    overflow: hidden;
+    margin-right: 10px;
+    width: 210px;
+    height: 44px;
+    background: url(../img/icon_xiangqing.png) no-repeat;
+    background-position: 0 -890px;
+}
+
+.promotionBottom {
+    margin-top: 15px;
+    padding-left: 15px;
+    color: #957a67;
+}
+
+.proCity {
+    position: static;
+    z-index: 1001;
+    clear: both;
+}
+
+.proCityList {
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    z-index: 1001;
+    float: left;
+    padding: 5px 10px;
+    width: 280px;
+    border: 2px solid #f90;
+    background: #ffffe8;
+}
+
+.proCityList dd {
+    float: left;
+    width: 280px;
+}
+
+.proCityList dd p {
+    float: left;
+    display: inline;
+    padding: 3px;
+    width: 50px;
+}
+
+.proCityList dd p a {
+    padding: 5px;
+    background: 0;
+    color: #36c;
+}
+
+.proDetails {
+    width: 960px;
+    height: auto;
+}
+
+.proDetails h3 {
+    float: left;
+    width: 958px;
+    height: 38px;
+    border-color: #e6e1db #e6e1db #74463a #e6e1db;
+    border-style: solid;
+    border-width: 1px 1px 2px 1px;
+    background: #f3f0ed;
+}
+
+.proDetails h3 a {
+    float: left;
+    padding: 0 15px;
+    width: 110px;
+    height: 38px;
+    background: url(../img/line.gif) right center no-repeat;
+    color: #74463a;
+    text-align: center;
+    text-decoration: none;
+    font: 14px/38px 宋体;
+}
+
+.proDetails h3 a.hover {
+    float: left;
+    padding: 0 15px;
+    height: 38px;
+    background: url(../img/icon_xiangqing.png) no-repeat;
+    background-position: 0 -764px;
+    background-repeat: repeat-x;
+    color: #fff;
+    text-decoration: none;
+    font: bold 14px/38px 宋体;
+}
+
+.proDetails h3 .add-cart {
+    float: right;
+    margin: 6px 6px 0 0;
+    width: 102px;
+    height: 26px;
+    border: 0;
+    background: url(../img/icon_xiangqing.png) no-repeat;
+    background-position: -62px -232px;
+    text-indent: -999em;
+    cursor: pointer;
+}
+
+.proTab {
+    position: relative;
+    float: left;
+}
+
+.xiangqing {
+    overflow: hidden;
+    margin-bottom: 15px;
+    padding: 15px 0;
+    width: 958px;
+    border-right: 1px solid #e6e1db;
+    border-bottom: 1px solid #e6e1db;
+    border-left: 1px solid #e6e1db;
+    background: #fff;
+}
+
+.xiangqing ul {
+    overflow: hidden;
+    width: 965px;
+}
+
+.xiangqing ul li {
+    float: left;
+    overflow: hidden;
+    margin: 0;
+    padding: 0 10px;
+    width: 220px;
+    height: 30px;
+    background: url(../img/xuxianY.gif) repeat-y scroll right center transparent;
+    line-height: 30px;
+}
+
+.xiangqing ul li span {
+    display: block;
+    overflow: hidden;
+    margin-top: 7px;
+    padding-left: 22px;
+    height: 16px;
+    background: url(../img/xiangqingIco.png) no-repeat scroll 0 0 transparent;
+    color: #666;
+    line-height: 16px;
+}
+
+.xiangqing ul li span b {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.xiangqing ul li span.zonglei {
+    background-position: 0 0;
+}
+
+.xiangqing ul li span.jibie {
+    height: 18px;
+    background-position: 0 -24px;
+}
+
+.xiangqing ul li span.sezhe {
+    background-position: 0 -56px;
+}
+
+.xiangqing ul li span.xiangwei {
+    background-position: -248px -56px;
+}
+
+.proContent {
+    overflow: hidden;
+    margin-bottom: 15px;
+    width: 958px;
+    border: 1px solid #e6e1db;
+    background: #fff;
+    color: #838383;
+    font: 12px/160% "Arial";
+}
+
+.head-main {
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+
+.mod-comment-list {
+    position: relative;
+    margin-bottom: 15px;
+    width: 958px;
+    border: 1px solid #e6e1db;
+    background: #fff;
+}
+
+.mod-comment-list h3 {
+    float: none;
+    height: 38px;
+    background: url(../img/icon_xiangqing.png) repeat-x 0 -764px;
+}
+
+.mod-comment-list h3 strong {
+    height: 38px;
+    border: 0;
+    background: 0;
+    color: #fff;
+    line-height: 38px;
+    width: 110px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.mod-comment-list .comment {
+    height: 100px;
+}
+
+.consulting {
+    margin: 0 0 15px 0;
+    width: 958px;
+    border: 1px solid #e6e1db;
+    background: #fff;
+}
+
+.consulting h3 {
+    margin-bottom: 10px;
+    height: 38px;
+    background: url(../img/icon_xiangqing.png) repeat-x scroll 0 -764px transparent;
+}
+
+.consulting h3 a.hover {
+    overflow: hidden;
+    padding: 0;
+    background: 0;
+    color: #fff;
+}
+
+.consulting .consult {
+    height: 100px;
+}

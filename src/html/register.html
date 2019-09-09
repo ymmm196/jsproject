@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册也买酒</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+
+<body style="font-size: 12px;">
+    <!-- header头部iframe引入 -->
+    <div style="height: 100px;"><iframe src="header_login.html" frameborder="0" width="100%" height="100%"
+            scrolling="no"></iframe></div>
+    <!-- 注册部分 -->
+    <div class="login content">
+        <div class="box-main clearfix">
+            <div class="mod-login fl">
+                <h2>注册也买酒</h2>
+                <a href="###" class="aa">您可以使用QQ、支付宝、新浪微博登录</a>
+                <form action="" id="registerForm">
+                    <dl>
+                        <dt>手机号码:</dt>
+                        <dd><input type="text" class="txt-input " id="tel" placeholder="请输入手机号">
+                            <div class="error hidden">
+                                <label for="" class="error">请输入手机号</label>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>验证码:</dt>
+                        <dd><input type="text" class="txt-input txt-validcode" id="imgCode" placeholder="请输入验证码">
+                            <canvas width="105" height="40" id="captcha"></canvas>
+                            <div class="error hidden">
+                                <label for="" class="error">请输入验证码</label>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>短信验证码:</dt>
+                        <dd><input type="text" class="txt-input txt-validcode" id="msgCode" placeholder="请输入验证码">
+                            <span class="btn btn-style">获取短信验证码</span>
+                            <div class="error hidden">
+                                <label for="" class="error">请输入验证码</label>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>密　　码:</dt>
+                        <dd><input type="password" class="txt-input " id="passwordA" placeholder="请输入密码">
+                            <div class="error hidden"><label for="" class="error">请输入密码</label>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>密码确认:</dt>
+                        <dd><input type="password" class="txt-input " id="passwordB" placeholder="再次输入登陆密码">
+                            <div class="error hidden"><label for="" class="error">请再次输入密码</label>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <label for="" id="vip">
+                            <input type="checkbox" class="chk-vip error">
+                            <span>我有VIP升级吗</span>
+                        </label>
+                    </dl>
+                    <dl id="vip2">
+                        <label for="">
+                            <input type="checkbox" class="chk-clause valid">
+                            <span class="accept">我已满18周岁并接收</span>
+                            <a href="//www.yesmywine.com/help/view.jspa?cid=13025">《也买酒服务条款》</a>
+                        </label>
+                    </dl>
+                    <dl>
+                        <a href="###" id="btn-register">注册完成</a>
+                    </dl>
+                </form>
+            </div>
+            <div class="mod-login-note fr"></div>
+        </div>
+    </div>
+    <!-- 底部ifram引入 -->
+    <div class="container" style="height: 273px;">
+        <iframe src="footer_login.html" frameborder="0" width="100%" height="100%" scrolling="no"></iframe>
+    </div>
+</body>
+<script src="../js/captcha.js"></script>
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../js/register.js"></script>
+<script>
+</script>
+
+</html>

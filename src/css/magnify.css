@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: top;
+    border: 0;
+}
+
+/* #MagnifierWrap{position: relative;width: 350px;margin:100px auto;} */
+#MagnifierWrap2 {
+    position: relative;
+    width: 380px;
+    /* margin: 100px auto; */
+    /* height: 440px; */
+}
+
+.MagnifierMain {
+    position: relative;
+    width: 378px;
+    height: 438px;
+    border: 1px solid #cbcbcb;
+}
+
+.MagnifierMain img {
+    width: 220px;
+    height: 360px;
+    margin: auto;
+    display: block;
+}
+
+.MagnifierDrag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ccc;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    cursor: move;
+}
+
+.MagnifierPop {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    z-index: 100;
+    /* background: #fff url(http://fan.yoka.com/fan5.0/img/loading.gif) no-repeat center center; */
+}
+
+.MagnifierImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.spec-items {
+    position: relative;
+    width: 292px;
+    height: 69px;
+    overflow: hidden;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+
+.spec-items ul {
+    width: 500%;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.spec-items ul * {
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.spec-items li {
+    width: 65px;
+    height: 65px;
+    float: left;
+    overflow: hidden;
+    margin-right: 5px;
+    border: 1px solid #fff;
+    cursor: pointer;
+
+}
+
+.spec-items li.on {
+    border: 1px solid #CCC;
+}
+
+.spec-items li img {
+    width: 40px;
+    height: 65px;
+    /* vertical-align: center; */
+    margin: auto;
+    display: block;
+}
+
+span.spe_leftBtn,
+span.spe_rightBtn {
+    position: absolute;
+    bottom: 7.5px;
+    display: block;
+    width: 15px;
+    height: 50px;
+    line-height: 50px;
+    font-family: "黑体";
+    text-align: center;
+    font-size: 30px;
+    color: #ddd;
+    cursor: default;
+    background-color: #f9f9f9;
+}
+
+span.on {
+    background-color: #ccc;
+    color: #999;
+    cursor: pointer;
+}
+
+span.spe_leftBtn {
+    left: 0;
+}
+
+span.spe_rightBtn {
+    right: 0;
+}

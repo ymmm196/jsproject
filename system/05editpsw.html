@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>用户管理页</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+	<link rel="stylesheet" href="css/uniform.css" />
+	<link rel="stylesheet" href="css/select2.css" />
+	<link rel="stylesheet" href="css/matrix-style2.css" />
+	<link rel="stylesheet" href="css/matrix-media.css" />
+	<link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+	<div id="content">
+		<div id="content-header">
+			<h1>用户信息管理</h1>
+		</div>
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="span12">
+					<div class="widget-box">
+						<div class="widget-title"> <span class="icon"> <i class="icon-info-sign"></i> </span>
+							<h5>修改密码</h5>
+						</div>
+						<div class="widget-content nopadding">
+							<form class="form-horizontal" method="post" action="#" name="password_validate"
+								id="password_validate" novalidate="novalidate">
+								<div class="control-group">
+									<label class="control-label">用户名</label>
+									<div class="controls">
+										<input type="text" name="required" id="required">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label">密码</label>
+									<div class="controls">
+										<input type="password" name="pwd" id="pwd">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label">确认密码</label>
+									<div class="controls">
+										<input type="password" name="pwd2" id="pwd2">
+									</div>
+								</div>
+								<div class="form-actions">
+									<input type="button" value="保存" class="btn btn-success">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="http://www.jq22.com/jquery/jquery-1.7.1.js"></script>
+	<script src="js/jquery.ui.custom.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.uniform.js"></script>
+	<script src="js/select2.min.js"></script>
+	<script src="js/jquery.dataTables.min.js"></script>
+	<script src="js/matrix.js"></script>
+	<script src="js/matrix.tables.js"></script>
+</body>
+<script>
+	$(function () {
+		let regPassword = /^[a-zA-Z0-9]{6,16}$/;
+		$('.btn-success').click(function () {
+			let pwd1 = $.trim($('#pwd').val())
+			let pwd2 = $.trim($('#pwd2').val())
+			//先验证用户名是否存在数据库中
+			if ($.trim($('#required').val())) {
+				$.ajax({
+					type: 'post',
+					url: 'api/main.php',
+					data: {
+						type: 'reg_verify',
+						user: $.trim($('#required').val())
+					},
+					success: str => {
+						let arr = JSON.parse(str);
+						// console.log(arr);
+						if (arr.code == 0) {
+							if (pwd1.length != 0 && regPassword.test(pwd1) && pwd1 == pwd2) {
+								console.log($.trim($('#required').val()), pwd1);
+								$.ajax({
+									type: 'post',
+									url: 'api/main.php',
+									data: {
+										type: 'changepwd',
+										pwd: pwd1,
+										user: $.trim($('#required').val())
+									},
+									success: str1 => {
+										let arr1 = JSON.parse(str1);
+										// console.log(arr1);
+										if (arr1.code) {
+											alert(arr1.msg);
+										}
+									}
+								})
+							} else {
+								alert('输入正确得账号密码！')
+							}
+						} else {
+							alert('请先注册！')
+						}
+					}
+				})
+			} else {
+				alert('输入账号！')
+			}
+
+
+		})
+	});
+</script>
+
+</html>

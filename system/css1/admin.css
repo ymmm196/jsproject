@@ -1,0 +1,58 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    height: 50px;
+    width: 100%;
+    background: #2E363F;
+}
+
+.header h1 {
+    height: 50px;
+    margin-left: 20px;
+    line-height: 50px;
+    font-size: 20px;
+    color: #A4D3EE;
+}
+
+#nav {
+    width: 15%;
+    float: left;
+    background: #2E363F;
+}
+
+#nav>ul>li {
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+#nav>ul>li h4 {
+    padding: 8px 0;
+}
+
+#nav>ul li span {
+    position: absolute;
+    top: 5px;
+    right: 12px;
+    font-size: 22px;
+    color: #fff;
+    display: inline-block;
+}
+
+#nav>ul>li .child-ul {
+    background: #fff;
+    display: none;
+}
+
+#nav>ul>li .child-ul li {
+    color: #000;
+    line-height: 40px;
+}
+
+#nav .active {
+    background: #08c;
+}

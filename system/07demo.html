@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Matrix Admin</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+		<link rel="stylesheet" href="css/fullcalendar.css" />
+		<link rel="stylesheet" href="css/jquery.gritter.css" />
+		<link rel="stylesheet" href="css/matrix-style2.css" />
+		<link rel="stylesheet" href="css/matrix-media.css" />
+		<link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+
+		<div id="content">
+			<div class="quick-actions_homepage">
+				<ul class="quick-actions">
+					<li class="bg_lb">
+						<a href="#"> <i class="icon-dashboard"></i> My Dashboard </a>
+					</li>
+					<li class="bg_lg">
+						<a href="#"> <i class="icon-shopping-cart"></i> Shopping Cart</a>
+					</li>
+					<li class="bg_ly">
+						<a href="#"> <i class=" icon-globe"></i> Web Marketing </a>
+					</li>
+					<li class="bg_lo">
+						<a href="#"> <i class="icon-group"></i> Manage Users </a>
+					</li>
+					<li class="bg_ls">
+						<a href="#"> <i class="icon-signal"></i> Check Statistics</a>
+					</li>
+				</ul>
+			</div>
+			<div class="container-fluid">
+				<div class="row-fluid">
+					<div class="widget-box">
+						<div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+							<h5>商品信息表</h5>
+							<span class="label label-info">Featured</span> </div>
+						<div class="widget-content nopadding">
+							<table class="table table-bordered table-striped">
+								<thead>
+									<tr>
+										<th>gid</th>
+										<th>商品标题</th>
+										<th>商品的价格</th>
+										<th>商品的库存量</th>
+										<th>图片路径</th>
+										<th>操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td contenteditable="true">苹果10</td>
+										<td contenteditable="true">12000</td>
+										<td contenteditable="true">30</td>
+										<td contenteditable="true">http://sss.jpg</td>
+										<td>
+											<button type="submit" class="btn btn-info">修改保存</button>
+											<button type="submit" class="btn btn-danger">删除</button>
+										</td>
+									</tr>
+									
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="dataTables_paginate fg-buttonset ui-buttonset fg-buttonset-multi ui-buttonset-multi paging_full_numbers" id="DataTables_Table_0_paginate">
+						<a tabindex="0" class="first ui-corner-tl ui-corner-bl fg-button ui-button ui-state-default ui-state-disabled" id="DataTables_Table_0_first">First</a>
+						<a tabindex="0" class="previous fg-button ui-button ui-state-default ui-state-disabled" id="DataTables_Table_0_previous">Previous</a><span><a tabindex="0" class="fg-button ui-button ui-state-default ui-state-disabled">1</a><a tabindex="0" class="fg-button ui-button ui-state-default">2</a><a tabindex="0" class="fg-button ui-button ui-state-default">3</a><a tabindex="0" class="fg-button ui-button ui-state-default">4</a><a tabindex="0" class="fg-button ui-button ui-state-default">5</a></span>
+						<a tabindex="0" class="next fg-button ui-button ui-state-default" id="DataTables_Table_0_next">Next</a>
+						<a tabindex="0" class="last ui-corner-tr ui-corner-br fg-button ui-button ui-state-default" id="DataTables_Table_0_last">Last</a>
+					</div>
+					<div class="widget-box">
+						<div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+							<h5>添加新的商品</h5>
+						</div>
+						<div class="widget-content nopadding">
+							<form class="form-horizontal">
+								<div class="control-group">
+									<label class="control-label">商品名称</label>
+									<div class="controls">
+										<input type="text" placeholder="Hover for tooltip…" data-title="A tooltip for the input" class="span11 tip" data-original-title="">
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label">分类</label>
+									<div class="controls">
+										<input type="text" placeholder="Type here for auto complete…" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source="[&quot;Alabama&quot;,&quot;Alaska&quot;,&quot;Arizona&quot;,&quot;Arkansas&quot;,&quot;California&quot;,&quot;Colorado&quot;,&quot;Ahmedabad&quot;,&quot;India&quot;,&quot;Florida&quot;,&quot;Georgia&quot;,&quot;Hawaii&quot;,&quot;Idaho&quot;,&quot;Illinois&quot;,&quot;Indiana&quot;,&quot;Iowa&quot;,&quot;Kansas&quot;,&quot;Kentucky&quot;,&quot;Louisiana&quot;,&quot;Maine&quot;,&quot;Maryland&quot;,&quot;Massachusetts&quot;,&quot;Michigan&quot;,&quot;Minnesota&quot;,&quot;Mississippi&quot;,&quot;Missouri&quot;,&quot;Montana&quot;,&quot;Nebraska&quot;,&quot;Nevada&quot;,&quot;New Hampshire&quot;,&quot;New Jersey&quot;,&quot;New Mexico&quot;,&quot;New York&quot;,&quot;North Dakota&quot;,&quot;North Carolina&quot;,&quot;Ohio&quot;,&quot;Oklahoma&quot;,&quot;Oregon&quot;,&quot;Pennsylvania&quot;,&quot;Rhode Island&quot;,&quot;South Carolina&quot;,&quot;South Dakota&quot;,&quot;Tennessee&quot;,&quot;Texas&quot;,&quot;Utah&quot;,&quot;Vermont&quot;,&quot;Virginia&quot;,&quot;Washington&quot;,&quot;West Virginia&quot;,&quot;Wisconsin&quot;,&quot;Wyoming&quot;]" class="span11">
+									</div>
+								</div>
+								<!--<div class="control-group">
+              <label class="control-label">Prepended Input</label>
+              <div class="controls">
+                <div class="input-prepend"> <span class="add-on">#</span>
+                  <input type="text" placeholder="prepend" class="span11">
+                </div>
+              </div>
+            </div>-->
+								<div class="control-group">
+									<label class="control-label">价格</label>
+									<div class="controls">
+										<div class="input-append">
+											<input type="text" placeholder="5.000" class="span11">
+											<span class="add-on">$</span> </div>
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label">图片路径</label>
+									<div class="controls">
+										<input type="text" placeholder="Type here for auto complete…" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source="[&quot;Alabama&quot;,&quot;Alaska&quot;,&quot;Arizona&quot;,&quot;Arkansas&quot;,&quot;California&quot;,&quot;Colorado&quot;,&quot;Ahmedabad&quot;,&quot;India&quot;,&quot;Florida&quot;,&quot;Georgia&quot;,&quot;Hawaii&quot;,&quot;Idaho&quot;,&quot;Illinois&quot;,&quot;Indiana&quot;,&quot;Iowa&quot;,&quot;Kansas&quot;,&quot;Kentucky&quot;,&quot;Louisiana&quot;,&quot;Maine&quot;,&quot;Maryland&quot;,&quot;Massachusetts&quot;,&quot;Michigan&quot;,&quot;Minnesota&quot;,&quot;Mississippi&quot;,&quot;Missouri&quot;,&quot;Montana&quot;,&quot;Nebraska&quot;,&quot;Nevada&quot;,&quot;New Hampshire&quot;,&quot;New Jersey&quot;,&quot;New Mexico&quot;,&quot;New York&quot;,&quot;North Dakota&quot;,&quot;North Carolina&quot;,&quot;Ohio&quot;,&quot;Oklahoma&quot;,&quot;Oregon&quot;,&quot;Pennsylvania&quot;,&quot;Rhode Island&quot;,&quot;South Carolina&quot;,&quot;South Dakota&quot;,&quot;Tennessee&quot;,&quot;Texas&quot;,&quot;Utah&quot;,&quot;Vermont&quot;,&quot;Virginia&quot;,&quot;Washington&quot;,&quot;West Virginia&quot;,&quot;Wisconsin&quot;,&quot;Wyoming&quot;]" class="span11">
+									</div>
+								</div>
+								<!--<div class="control-group warning">
+              <label class="control-label" for="inputWarning">Input with warning</label>
+              <div class="controls">
+                <input type="text" id="inputWarning" class="span11">
+                <span class="help-inline">Something may have gone wrong</span> </div>
+            </div>
+            <div class="control-group error">
+              <label class="control-label" for="inputError">Input with error</label>
+              <div class="controls">
+                <input type="text" id="inputError" class="span11">
+                <span class="help-inline">Please correct the error</span> </div>
+            </div>
+            <div class="control-group info">
+              <label class="control-label" for="inputInfo">Input with info</label>
+              <div class="controls">
+                <input type="text" id="inputInfo" class="span11">
+                <span class="help-inline">Username is already taken</span> </div>
+            </div>-->
+								<!--<div class="control-group success">
+              <label class="control-label" for="inputSuccess">Input with success</label>
+              <div class="controls">
+                <input type="text" id="inputSuccess" class="span11">
+                <span class="help-inline">Woohoo!</span> </div>
+            </div>-->
+
+							</form>
+							<div class="form-actions">
+								<button type="submit" class="btn btn-success">保存</button>
+								<!--<button type="submit" class="btn btn-primary">Reset</button>
+              <button type="submit" class="btn btn-info">Edit</button>
+              <button type="submit" class="btn btn-danger">Cancel</button>-->
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<hr>
+				<div class="row-fluid">
+
+				</div>
+			</div>
+		</div>
+
+		<script src="js/excanvas.min.js"></script>
+		<script src="http://www.jq22.com/jquery/jquery-1.7.1.js"></script>
+		<script src="js/jquery.ui.custom.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.flot.min.js"></script>
+		<script src="js/jquery.flot.resize.min.js"></script>
+		<script src="js/jquery.peity.min.js"></script>
+		<script src="js/jquery.gritter.min.js"></script>
+		<script src="js/matrix.js"></script>
+		<script src="js/fullcalendar.min.js"></script>
+		<script src="js/matrix.calendar.js"></script>
+		<script src="js/matrix.chat.js"></script>
+		<script src="js/jquery.validate.js"></script>
+		<script src="js/matrix.form_validation.js"></script>
+		<script src="js/jquery.wizard.js"></script>
+		<script src="js/jquery.uniform.js"></script>
+		<script src="js/select2.min.js"></script>
+		<script src="js/matrix.popover.js"></script>
+		<script src="js/jquery.dataTables.min.js"></script>
+		<script src="js/matrix.tables.js"></script>
+		<script src="js/matrix.interface.js"></script>
+		<script type="text/javascript">
+			// This function is called from the pop-up menus to transfer to
+			// a different page. Ignore if the value returned is a null string:
+			function goPage(newURL) {
+
+				// if url is empty, skip the menu dividers and reset the menu selection to default
+				if(newURL != "") {
+
+					// if url is "-", it is this page -- reset the menu:
+					if(newURL == "-") {
+						resetMenu();
+					}
+					// else, send page to designated URL            
+					else {
+						document.location.href = newURL;
+					}
+				}
+			}
+
+			// resets the menu selection upon entry to this page:
+			function resetMenu() {
+				document.gomenu.selector.selectedIndex = 2;
+			}
+		</script>
+	</body>
+
+</html>
